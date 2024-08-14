@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métricas en el Desarrollo de Software</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Métricas en el Desarrollo de Software</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#calidad">Calidad y Métricas</a></li>
+            <li><a href="#tipos">Tipos de Métricas</a></li>
+            <li><a href="#diseno">Métricas de Diseño</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container" id="inicio">
+        <h2>Introducción a las Métricas de Software</h2>
+        <p>Las métricas de software son medidas cuantitativas que se utilizan para evaluar la calidad, eficiencia y progreso del desarrollo de software. Estas métricas proporcionan información valiosa para la toma de decisiones y la mejora continua del proceso de desarrollo.</p>
+        <img src="assets/metricas.png" alt="Gráfico de métricas de software" width="600" height="400">
+    </div>
+    
+    <div class="container" id="calidad">
+        <h2>Calidad del Software y Métricas</h2>
+        <p>La calidad del software es un concepto multifacético que puede ser definido de varias maneras:</p>
+        <ul>
+            <li>Según el American Heritage Dictionary: "Una característica o atributo de algo."</li>
+            <li>Definición ISO-8402: "La totalidad de rasgos y características de un producto, proceso o servicio que sostiene la habilidad de satisfacer estados o necesidades implícitas."</li>
+            <li>Según Pressman: "Concordar explícitamente al estado funcional y a los requerimientos del funcionamiento, explícitamente a los estándares de documentación de desarrollo, e implícitamente características que son expectativas de todos los desarrolladores profesionales de software."</li>
+        </ul>
+        <h3>Factores que Afectan la Calidad</h3>
+        <p>McCall y Cavano definieron un conjunto de factores de calidad que evalúan el software desde tres puntos de vista:</p>
+        <ol>
+            <li>Operación del producto (utilizándolo)</li>
+            <li>Revisión del producto (cambiándolo)</li>
+            <li>Transición del producto (modificándolo para que funcione en un entorno diferente)</li>
+        </ol>
+        <h3>Medidas de Calidad</h3>
+        <p>Algunas medidas importantes de la calidad del software incluyen:</p>
+        <ul>
+            <li><strong>Corrección:</strong> El grado en que el software lleva a cabo una función requerida.</li>
+            <li><strong>Facilidad de mantenimiento:</strong> La habilidad con la que se puede corregir, adaptar o mejorar un programa.</li>
+            <li><strong>Integridad:</strong> La habilidad de un sistema para soportar ataques contra su seguridad.</li>
+            <li><strong>Facilidad de uso:</strong> El esfuerzo requerido para aprender, operar y usar el software.</li>
+        </ul>
+    </div>
+    
+    <div class="container" id="tipos">
+        <h2>Tipos de Métricas de Software</h2>
+        <h3>Métricas de Producto</h3>
+        <p>Miden las características del software producido.</p>
+        <h3>Métricas de Proceso</h3>
+        <p>Evalúan el proceso de desarrollo de software.</p>
+        <h3>Métricas de Proyecto</h3>
+        <p>Miden el progreso y los recursos del proyecto.</p>
+        <h3>Métricas de Fiabilidad y Disponibilidad</h3>
+        <p>El tiempo medio entre fallos (TMEF) es una medida importante:</p>
+        <div class="formula">
+            TMEF = TMDF + TMDR
+        </div>
+        <p>Donde TMDF es el tiempo medio de fallo y TMDR es el tiempo medio de reparación.</p>
+        <p>La disponibilidad se calcula como:</p>
+        <div class="formula">
+            Disponibilidad = TMDF / (TMDF + TMDR) * 100%
+        </div>
+        <h3>Eficacia de la Eliminación de Defectos (EED)</h3>
+        <p>Una métrica importante que se calcula como:</p>
+        <div class="formula">
+            EED = E / (E + D)
+        </div>
+        <p>Donde E es el número de errores encontrados antes de la entrega y D es el número de defectos encontrados después de la entrega.</p>
+        <img src="/api/placeholder/600/400" alt="Tipos de métricas de software">
+    </div>
+    
+    <div class="container" id="diseno">
+        <h2>Métricas de Diseño de Software</h2>
+        <h3>Métricas de Diseño de Alto Nivel</h3>
+        <p>Estas métricas se concentran en las características de la estructura del programa. Algunas métricas importantes incluyen:</p>
+        <ul>
+            <li><strong>Complejidad estructural:</strong> S(i) = f<sup>2</sup><sub>out</sub>(i)</li>
+            <li><strong>Complejidad de datos:</strong> D(i) = v(i) / [f<sub>out</sub>(i) + 1]</li>
+            <li><strong>Complejidad del sistema:</strong> C(i) = S(i) + D(i)</li>
+        </ul>
+        <h3>Métricas de Henry y Kafura</h3>
+        <p>Una métrica de complejidad definida como:</p>
+        <div class="formula">
+            MHK = longitud(i) * [f<sub>in</sub>(i) + f<sub>out</sub>(i)]<sup>2</sup>
+        </div>
+        <h3>Índice de Calidad de la Estructura del Diseño (ICED)</h3>
+        <p>Un índice que va de 0 a 1, donde valores más cercanos a 1 indican mayor estabilidad del diseño.</p>
+        <h3>Métricas de Diseño en los Componentes</h3>
+        <p>Incluyen medidas de cohesión, acoplamiento y complejidad del módulo.</p>
+        <h4>Métricas de Cohesión</h4>
+        <p>Bieman y Ott definen métricas para cohesiones funcionales fuertes (CFF) y débiles (CFD).</p>
+        <h4>Métricas de Acoplamiento</h4>
+        <p>Dhama propone una métrica para el acoplamiento del módulo que combina varios tipos de acoplamiento.</p>
+        <h4>Métricas de Complejidad</h4>
+        <p>La complejidad ciclomática de McCabe es una de las métricas de complejidad más utilizadas.</p>
+        <img src="/api/placeholder/600/400" alt="Métricas de diseño de software">
+    </div>
+</body>
+</html>
